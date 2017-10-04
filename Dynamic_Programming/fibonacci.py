@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Oct 03 21:37:23 2017
-
-@author: PulkitMaloo
-"""
-
-n = int(input())
+n = int(input("Enter n: "))
 
 fibonacci_numbers = [0, 1, 1]
 fibonacci_numbers.extend([-1]*(n-2))

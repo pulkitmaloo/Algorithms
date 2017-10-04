@@ -7,7 +7,7 @@ def quick_sort(arr, low, high):
 
 def partition(arr, low, high):
     x = arr[high]
-    i = low-1
+    i = low - 1
     for j in range(low, high):
         if arr[j] <= x:
             i += 1
