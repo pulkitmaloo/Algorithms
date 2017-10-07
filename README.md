@@ -1,1 +1,2 @@
-This repository contains the programs I made while practicing algorithms 
+# Algorithms
+This repository contains the programs I made while practicing algorithms
