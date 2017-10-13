@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 @author: Pulkit Maloo
-@studentID: maloop
 
 Bottom up approach is used to solve the problem as the bottom up approach avoids
 the stack overflow problem.
