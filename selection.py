@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Oct 12 20:35:29 2017
-
 @author: PulkitMaloo
 """
 import random as rand
@@ -19,6 +18,10 @@ def partition(arr, low, high):
     return i + 1
 
 def selection(arr, low, high, i):
+    """
+    Finding ith smallest element in the arr
+    low <= i <= high
+    """
     if low == high:
         return arr[low]
     pivot_index = partition(arr, low, high)
