@@ -20,9 +20,10 @@ class Job(object):
         self.start = start
         self.finish = finish
         self.weight = weight
-
     def __lt__(self, other):
          return self.finish < other.finish
+    def __str__(self):
+        print self.start, self.finish, self.weight
 
 jobs_list = []
 with open('input1.txt') as f:
@@ -30,10 +31,6 @@ with open('input1.txt') as f:
         j = map(int, job.split())
         jobs_list.append(Job(j[0], j[1], j[2]))
 jobs_list.sort()
-
-#def print_jobs(jobs_list=jobs_list):
-#    for i in jobs_list:
-#        print i.start, i.finish, i.weight
 
 # Bottom Up
 def max_weight(n=len(jobs_list), jobs_list=jobs_list):
