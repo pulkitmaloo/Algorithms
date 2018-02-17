@@ -1,0 +1,9 @@
+#!/bin/bash/env python
+import datetime as dt
+import pandas as pd
+import numpy as np
+from statsmodels.tsa.arima_model import ARIMA
+
+def predict_temperature(startDate, endDate, temperatures, n):
+    startDate = dt.datetime(map(int, startDate))
+    endDate = dt.datetime(map(int, endDate)) 
